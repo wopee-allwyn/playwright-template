@@ -78,6 +78,7 @@ export default defineConfig({
     trace: process.env.CI ? "off" : "on-first-retry",
     video: process.env.CI ? "off" : "on",
     screenshot: "only-on-failure",
+    ignoreHTTPSErrors: true,
     ...(process.env.BASIC_AUTH_USER && process.env.BASIC_AUTH_PASSWORD
       ? {
           httpCredentials: {
