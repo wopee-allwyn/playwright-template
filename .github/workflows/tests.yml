@@ -18,6 +18,6 @@ jobs:
     # minutes before anyone noticed.
     timeout-minutes: 30
     steps:
-      - uses: Wopee-io/run-playwright@v1
+      - uses: wopee-allwyn/run-playwright@v1
         env:
           WOPEE_API_KEY: ${{ secrets.WOPEE_API_KEY }}

@@ -13,6 +13,6 @@ jobs:
     # label gets this line rewritten by infra's utils/repo-sync.sh.
     runs-on: [self-hosted, wopee]
     steps:
-      - uses: Wopee-io/run-agent@v1
+      - uses: wopee-allwyn/run-agent@v1
         env:
           WOPEE_API_KEY: ${{ secrets.WOPEE_API_KEY }}
